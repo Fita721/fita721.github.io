@@ -18,6 +18,13 @@
   p { margin: 0 0 14px; }
   .en { margin-top: 22px; padding-top: 20px; border-top: 1px solid #1c3a52; color: var(--muted); }
   .en .lead { color: var(--accent); opacity: .85; }
+  .actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0 10px; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 10px 18px;
+    border: 1px solid var(--accent); border-radius: 12px; font-weight: 600; text-decoration: none; }
+  .btn-primary { background: var(--accent); color: #06131f; }
+  .btn-secondary { background: transparent; color: var(--accent); }
+  .btn:focus-visible { outline: 2px solid var(--text); outline-offset: 3px; }
+  .note { margin: 0; color: var(--muted); font-size: .9rem; }
   footer { margin: 22px 0 0; padding-top: 16px; border-top: 1px solid #1c3a52; color: var(--muted); font-size: .9rem; overflow-wrap: anywhere; }
   a { color: var(--accent); }
 </style>
@@ -28,9 +35,21 @@
   <p class="lead">Temporizador de concentración sin móvil</p>
   <p>Elige cuánto tiempo, deja el teléfono quieto y, cuando termina la sesión, el huevo eclosiona y una criatura marina pixel art se une a tu acuario.</p>
 
+  <div class="actions">
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.fitadeveloper.fishsleep" target="_blank" rel="noopener">Descargar en Google Play</a>
+    <a class="btn btn-secondary" href="jugar/">Probar en el navegador</a>
+  </div>
+  <p class="note">La versión web es una demo: los retos en grupo por WiFi solo funcionan en la app de Android.</p>
+
   <div class="en" lang="en">
     <p class="lead">Phone-free focus timer</p>
     <p>Pick how long, leave your phone alone, and when the session ends the egg hatches and a new pixel-art sea creature joins your aquarium.</p>
+
+    <div class="actions">
+      <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.fitadeveloper.fishsleep" target="_blank" rel="noopener">Get it on Google Play</a>
+      <a class="btn btn-secondary" href="jugar/">Try it in your browser</a>
+    </div>
+    <p class="note">The web version is a demo: group rooms over WiFi only work in the Android app.</p>
   </div>
 
   <footer>
